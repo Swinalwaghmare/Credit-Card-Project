@@ -1,11 +1,18 @@
 from flask import Flask
 from Creadit_card.logger import logging
+from Creadit_card.exception import CreaditException
+import sys
 
 app = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
 def index():
-    logging.info("We are testing logging module")
+    try:
+        raise Exception("We are testing custom exception")
+    except Exception as e:
+        creadit = CreaditException(e, sys)
+        logging.info(creadit.error_message)
+        logging.info("We are testing logging module")
     return "HELLO DUDE"
 
 if __name__ == "__main__":
