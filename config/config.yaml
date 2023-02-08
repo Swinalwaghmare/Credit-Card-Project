@@ -1,5 +1,5 @@
 training_pipeline_config:
-  pipeline_name: creadit_card
+  pipeline_name: Creadit_card
   artifact_dir: artifact
 
 data_ingestion_config:

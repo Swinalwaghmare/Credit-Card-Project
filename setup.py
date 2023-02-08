@@ -3,7 +3,7 @@ from typing import List
 
 # Declaring variables for setup function
 PROJECT_NAME = "Creadit-card-project"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Swinal"
 DESCRIPTION = "This is a creadit card detection"
 PACKAGES = ["Creadit_card"]

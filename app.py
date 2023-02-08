@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/",methods=["GET","POST"])
 def index():
     try:
-        raise Exception("We are testing custom exception")
+        pass
     except Exception as e:
         creadit = CreaditException(e, sys)
         logging.info(creadit.error_message)
